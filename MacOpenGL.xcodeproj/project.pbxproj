@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9E29225917D438A8006FEADB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E29225817D438A8006FEADB /* main.c */; };
 		9E29225B17D438A9006FEADB /* MacOpenGL.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9E29225A17D438A9006FEADB /* MacOpenGL.1 */; };
+		9E29226217D44135006FEADB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E29226117D44135006FEADB /* OpenGL.framework */; };
+		9E29226417D44214006FEADB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E29226317D44214006FEADB /* GLUT.framework */; };
+		9E33531E17F424200018CBED /* MYImage.h in Sources */ = {isa = PBXBuildFile; fileRef = 9E33531D17F424200018CBED /* MYImage.h */; };
+		9E33532417F4345C0018CBED /* MYImage.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E33532317F4345C0018CBED /* MYImage.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,15 @@
 		9E29225517D438A8006FEADB /* MacOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E29225817D438A8006FEADB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		9E29225A17D438A9006FEADB /* MacOpenGL.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MacOpenGL.1; sourceTree = "<group>"; };
+		9E29226117D44135006FEADB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9E29226317D44214006FEADB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		9E33531D17F424200018CBED /* MYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImage.h; sourceTree = "<group>"; };
+		9E33531F17F431140018CBED /* lena.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = lena.bmp; sourceTree = "<group>"; };
+		9E33532017F433EB0018CBED /* ext.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext.txt; sourceTree = "<group>"; };
+		9E33532317F4345C0018CBED /* MYImage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MYImage.c; sourceTree = "<group>"; };
+		9E33532517F439A70018CBED /* MYDefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDefined.h; sourceTree = "<group>"; };
+		9E33532717F43AA00018CBED /* MY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MY.h; sourceTree = "<group>"; };
+		9E33532917F43C490018CBED /* MYResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYResource.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E29226417D44214006FEADB /* GLUT.framework in Frameworks */,
+				9E29226217D44135006FEADB /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 		9E29224C17D438A8006FEADB = {
 			isa = PBXGroup;
 			children = (
+				9E29226317D44214006FEADB /* GLUT.framework */,
+				9E29226117D44135006FEADB /* OpenGL.framework */,
 				9E29225717D438A8006FEADB /* MacOpenGL */,
 				9E29225617D438A8006FEADB /* Products */,
 			);
@@ -60,10 +77,25 @@
 		9E29225717D438A8006FEADB /* MacOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				9E33532817F43C100018CBED /* Resource */,
+				9E33532717F43AA00018CBED /* MY.h */,
+				9E33532517F439A70018CBED /* MYDefined.h */,
+				9E33532917F43C490018CBED /* MYResource.h */,
+				9E33531D17F424200018CBED /* MYImage.h */,
+				9E33532317F4345C0018CBED /* MYImage.c */,
 				9E29225817D438A8006FEADB /* main.c */,
 				9E29225A17D438A9006FEADB /* MacOpenGL.1 */,
 			);
 			path = MacOpenGL;
+			sourceTree = "<group>";
+		};
+		9E33532817F43C100018CBED /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9E33532017F433EB0018CBED /* ext.txt */,
+				9E33531F17F431140018CBED /* lena.bmp */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E29225917D438A8006FEADB /* main.c in Sources */,
+				9E33531E17F424200018CBED /* MYImage.h in Sources */,
+				9E33532417F4345C0018CBED /* MYImage.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +250,7 @@
 				9E29226017D438A9006FEADB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
