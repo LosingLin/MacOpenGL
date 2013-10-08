@@ -117,7 +117,7 @@ void TimeUpdate(int time)
 
 void LoadTexture()
 {
-    initMYImage("lena.bmp");
+    initMYImage("github.bmp");
     unsigned int width = 0, height = 0;
     unsigned char* data = readBmpData(&width, &height);
     destoryMYImage();
@@ -150,6 +150,11 @@ void SetupRC()
     glLightfv(GL_LIGHT0, GL_DIFFUSE, LightDiffuse);
     glLightfv(GL_LIGHT0, GL_POSITION, LightPosition);
     glEnable(GL_LIGHT0);
+    
+    glEnable(GL_BLEND);
+    
+    glColor4f(1.0f, 1.0f, 1.0f, 0.5f);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE);
 }
 
 

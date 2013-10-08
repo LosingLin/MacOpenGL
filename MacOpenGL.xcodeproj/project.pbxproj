@@ -41,6 +41,7 @@
 		9E33532517F439A70018CBED /* MYDefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDefined.h; sourceTree = "<group>"; };
 		9E33532717F43AA00018CBED /* MY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MY.h; sourceTree = "<group>"; };
 		9E33532917F43C490018CBED /* MYResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYResource.h; sourceTree = "<group>"; };
+		9E3E53321803BF3B00DBED10 /* github.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = github.bmp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,7 @@
 		9E33532817F43C100018CBED /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9E3E53321803BF3B00DBED10 /* github.bmp */,
 				9E33532017F433EB0018CBED /* ext.txt */,
 				9E33531F17F431140018CBED /* lena.bmp */,
 			);
