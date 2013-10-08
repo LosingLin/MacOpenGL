@@ -117,7 +117,7 @@ void TimeUpdate(int time)
 
 void LoadTexture()
 {
-    initMYImage("github.bmp");
+    initMYImage("lena.bmp");
     unsigned int width = 0, height = 0;
     unsigned char* data = readBmpData(&width, &height);
     destoryMYImage();
