@@ -10,5 +10,6 @@
 #define MacOpenGL_MYDefined_h
 
 #define MY_SAFE_FREE(p) if(p) { free((p)); (p) = 0; }
+#define MIN(x,y) (x)>(y)?(y):(x)
 
 #endif
